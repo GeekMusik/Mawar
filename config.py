@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from os import environ
 
 load_dotenv("config.env")
+load_dotenv(".env")
 
 BOT_TOKEN = environ.get("BOT_TOKEN")
 API_ID = int(environ.get("API_ID"))
