@@ -20,7 +20,7 @@ keyboard = InlineKeyboardMarkup(
                 text="English🇬🇧", callback_data="languages_en"
             ),
             InlineKeyboardButton(
-                text="සිංහල🇱🇰", callback_data="languages_si"
+                text="Indonesia 🇮🇩", callback_data="languages_id"
             )
         ],
         [
@@ -34,7 +34,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="🌎 Help us with translation",
-                url=f"https://crwd.in/szrosebot",
+                url=f"https://crwd.in/mawar",
             )
         ],
         [
@@ -99,21 +99,21 @@ async def language_markup(_, CallbackQuery):
     ]
 )
 
-    return await CallbackQuery.message.edit("[🌎](https://crwd.in/szrosebot)Language was changed Successfully \n.Changed by {}".format(user),
+    return await CallbackQuery.message.edit("[🌎](https://crwd.in/mawar)Language was changed Successfully \n.Changed by {}".format(user),
         reply_markup=keyboard,
         disable_web_page_preview=True,
     ) 
 
 __MODULE__ = f"{Languages}"
 __HELP__ = """
-Not every group speaks fluent english; some groups would rather have Rose respond in their own language.
+Not every group speaks fluent english; some groups would rather have Mawar respond in their own language.
 
 This is where translations come in; you can change the language of most replies to be in the language of your choice!
 
 **Available languages are:**
 - हिन्दी🇮🇳
 - English🇬🇧
-- සිංහල🇱🇰
+- Indonesia 🇮🇩
 
 **Admin commands:**
 - /lang : Set your preferred language.
@@ -125,7 +125,7 @@ __helpbtns__ = (
                 text="English🇬🇧", callback_data="languages_en"
             ),
             InlineKeyboardButton(
-                text="සිංහල🇱🇰", callback_data="languages_si"
+                text="Indonesia 🇮🇩", callback_data="languages_id"
             )
         ],
         [
@@ -139,7 +139,7 @@ __helpbtns__ = (
         [
             InlineKeyboardButton(
                 text="🌎 Help us with translation",
-                url=f"https://crwd.in/szrosebot",
+                url=f"https://crwd.in/mawar",
             )
         ],
         [
